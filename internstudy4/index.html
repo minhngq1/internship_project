@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">  
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify rep 1:10000</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="sidebar">
+    <h2><span class="logo"></span>Music</h2>
+    <ul>
+      <li class="active"><i class="fa-solid fa-house"></i>Home</li>
+      <li><i class="fa-solid fa-magnifying-glass"></i>Search</li>
+      <li><i class="fa-solid fa-folder"></i>your music</li>
+    </ul>
+    <div class="playlist-section">
+      <h3 class="playlist-title">PLAYLISTS</h3>
+      <ul class="playlist-list">
+        <li>My Playlist #1</li>
+        <li>Chill Hits</li>
+        <li>Top 10</li>
+      </ul>
+    </div>
+  </div>
+  <div class="main">
+    <div class="header">
+      <input type="text" class="search" placeholder="Search for songs, artists...">
+      <div class="user">
+        <img src="assets/music/cover/gigachad.jpg" alt="user">
+        <span>minhnguyen</span>
+      </div>
+    </div>
+    <div class="playlist" id="playlist">
+    </div>
+  </div>
+
+<div class="player" id="player">
+  <img id="cover" src="" alt="cover">
+  <div class="info">
+    <div id="title">Title</div>
+    <div id="artist">Artist</div>
+  </div>
+  <div class="player-controls-progress">
+    <div class="controls">
+      <button id="prev"><i class="fa fa-backward"></i></button>
+      <button id="playpause"><i class="fa fa-play"></i></button>
+      <button id="next"><i class="fa fa-forward"></i></button>
+    </div>
+    <div class="progress-container">
+      <input type="range" id="progress" value="0" min="0" max="100" step="1">
+    </div>
+  </div>
+  <div class="volume-repeat-group">
+    <button id="repeat"><i class="fa-solid fa-repeat"></i></button>
+    <input type="range" id="volume" min="0" max="100" value="100" step="1">
+    <i class="fa fa-volume-up"></i>
+  </div>
+  <audio id="audio"></audio>
+</div>
+</div>
+  </div>
